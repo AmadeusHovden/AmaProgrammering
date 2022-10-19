@@ -10,4 +10,25 @@
     position:sticky;    
 }
 
-#
+body {
+    background-color:white;
+}
+
+#meny {
+    background:linear-gradient(to bottom, beige, white);
+    position:sticky;
+    margin-top:-20px;
+    color:black;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+button{
+    color:white;
+    background-color: blue;
+
+}
+
+#home {
+    margin-right:auto;
+}
