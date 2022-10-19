@@ -41,3 +41,53 @@ p{
     border-left-color: green;
 
 }
+
+#boks1 {
+    border: 10px solid;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    background:gold;
+
+    /*
+    margin-top: 50px;
+    margin-left: 50px;
+    margin:50px;
+    */
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#boks2 {
+    border: 10px solid;
+    width: 300px;
+    height: 300px;
+    font-size: 20px;
+    background:silver;
+
+    margin-right:auto;
+    margin-left:auto;
+}
+
+#bilde {
+    border-style: outset;
+    border-width: 10px;
+    border-color: gold;
+    padding: 10px
+}
+
+img{
+    float: right;
+
+}
+
+.box{
+    width:150px;
+    height: 150px;
+    border: 5px solid;
+    font-size: 40px;
+    text-align: center;
+    background: aqua;
+
+    float:right;
+}
