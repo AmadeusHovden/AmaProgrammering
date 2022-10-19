@@ -1,0 +1,43 @@
+body{
+background-image: url("mesi.webp");
+background-repeat:no-repeat;
+background-attachment:fixed;
+background-position: center;
+background-size: cover;
+
+    
+}
+h1{
+    color:white;
+    font-family: sans-serif;
+}
+p{
+    background: linear-gradient(to bottom,skyblue, black);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#p1 {
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.even {
+    color:red;
+    border-style: outset;
+    border-width: 10px;
+    border-color: gold;
+    padding: 10px
+}
+
+.odd {
+    border-top-style:dotted;
+    border-bottom-style:dotted;
+    border-left-style: double;
+    border-left-width:20px;
+    border-left-color: green;
+
+}
