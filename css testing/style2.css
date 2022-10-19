@@ -1,0 +1,25 @@
+#boks1 {
+    border:5px solid;
+    height: 300px;
+    width: 300px;
+    background-color: aqua;
+
+    position: sticky;  /*relativt til der den først er plassert*/
+    top: 10px;px;
+    left:200px:
+
+}
+
+
+
+#boks2 {
+    border:5px solid;
+    height: 100px;
+    width: 100px;
+    background-color: red;
+
+    position:fixed; /* "position:absolute" går etter toppen i venstre hjørnet av dokumentet*/
+    top:200px;
+    left:400px
+
+}
