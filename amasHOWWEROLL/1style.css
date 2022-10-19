@@ -1,0 +1,13 @@
+#overskrift {
+    background:linear-gradient(to bottom,skyblue,beige);
+    height: 100px;
+    font-size:40px;
+    text-align: center;
+    margin-top:-55px;
+    font-family:sans-serif;
+    color:grey;
+
+    position:sticky;    
+}
+
+#
