@@ -15,3 +15,94 @@ a:active {
     color:yellow;
 }
 
+button:hover {
+    color:grey;
+}
+
+button:active {
+background-color: brown;
+}
+
+li:nth-child(even){
+    background-color: yellow;
+}
+
+#boks69 {
+    border:5px solid;
+    width: 200px;
+    height: 200px;
+    font-size: 150px;
+    text-align: center;
+    background: lightblue;
+
+    transform:translateX(50px);
+    transform:translateY(50px);
+    transform:translate(50px, 50px);
+    transform:rotateX(180deg);
+    transform:rotateY(180deg);
+    transform:rotateZ(180deg);
+    transform: scaleX(3);
+    transform:scaleY(3);
+    transform: scale(2,2);
+    transform:skewX(40deg);
+    transform: skewY(40deg);
+    transform: skew(20deg, 20deg);
+
+    /*
+    transform: matrix(2,0,0,2,100,120);
+    */
+    
+}
+
+
+#boks169 {
+    width:250px;
+    height: 250px;
+    background:red;
+    font-size: 100px;
+    text-align: center;
+
+    /*
+    animation: mySlide;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-duration:5s;
+    animation-delay:0s;
+    animation-timing-function: linear;
+*/
+animation: 1s linear 0s infinite running myColorChange;
+
+}
+
+#boks169:active{
+
+}
+
+@keyframes mySlide {
+    from{margin-left:0%;}
+    to{margin-left: 100%;}
+
+}
+
+@keyframes myRotate {
+    100%{transform:rotateX(360deg)}
+    100%{transform:rotateY(360deg)}
+    100%{transform:rotateZ(360deg)}
+
+}
+
+@keyframes myOpacity {
+    50% {opacity:0;}
+}
+
+@keyframes myScale {
+    50% {transform: scale(0.5,0.5);}
+}
+
+@keyframes myColorChange
+{
+0%{background-color:red; }
+20%{background-color:orange; }
+50%{background-color:purple; }
+100%{background-color:green; }
+}
