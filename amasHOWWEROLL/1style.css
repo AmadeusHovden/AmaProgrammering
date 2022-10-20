@@ -40,7 +40,7 @@ nav ul li{
 }
 
 nav ul li a{
-    text-decoration: none;
+    text-decoration:none;
     color:white ;
 }
 
@@ -65,3 +65,8 @@ margin:auto;
     text-decoration:underline;
 }
 
+form {
+    align-items: center;
+}
+
+hr{
