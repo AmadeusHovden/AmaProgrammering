@@ -56,8 +56,12 @@ margin:auto;
     color:#202a44;
 }
 
-.text-box h3 h4 {
+.text-box h3{
     color: #202a44;
 }
 
+.text-box h4{
+    color: #202a44;
+    text-decoration:underline;
+}
 
