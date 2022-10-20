@@ -16,9 +16,9 @@
             <img src="lofo2.png">
             <h1>FellesSkapet</h1>
             <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="survey.html">Survey</a></li>
-                <li><a href="result.html">Result</a></li>
+                <li><a href="main.html"><h5>Home</h5></a></li>
+                <li><a href="survey.html"><h5 style="color:#202a44">Survey</h5></a></li>
+                <li><a href="result.html"><h5>Result</h5></a></li>
             </ul>
         </nav>
         <hr size="5" width="100%" color="#202a44">
@@ -30,6 +30,66 @@
             <h3>Helst svar på alt</h3>
         </div>
     </div>
+
+
+
+
+
+
+
+
+
+
+    <form action="result.html" method="get">
+        <h2>Info</h2>
+        <br>
         
+
+            <div>
+                <label for="fname"></label>
+                <input type="Text" id="fname" name="fname" placeholder="Name" required>
+            </div>
+            
+            <br>
+            
+            <div>
+                <label for="lname"></label>
+                <input type="Text" id="lname" name="lname" placeholder="Surname" required>
+            </div>
+            
+            <br>
+            
+            <div>
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="mail@g.com" required>
+            </div>
+            
+            <br>
+            
+            <div>
+                <label for="bdate"></label>
+                <input type="date" id="bdate" name="bdate">
+            </div> 
+            
+            <br>
+        
+            <div>
+                <label for="Mr">Mr.</label>
+                <input type="radio" id="Mr" name="title" value="Mr">
+            
+                <label for="Mrs">Mrs.</label>
+                <input type="radio" id="Mrs" name="title" value="Mrs">
+            </div>
+            
+            <br>
+           
+            <div>
+                <input type="reset">
+                <input type="submit" href="result.html">
+            </div>
+    </form>
+
+
+
 </body>
 </html>

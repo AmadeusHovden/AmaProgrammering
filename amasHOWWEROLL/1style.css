@@ -18,13 +18,26 @@ padding: 0 10%;
 img {
     width: 100px;
     height: 100px;
-    
+    border-style: outset;
+    border-width: 5px;
+    border-color:silver;
 }
 
 h1{
-    font-size: 50px;
+    font-size: 60px;
     font-family:sans-serif;
+    font-weight:350;
+    font-style:initial;
     color: #202a44;
+    
+}
+
+h5{
+    color:snow;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-style: initial;
+    font-weight: 200;
 }
 
 .text-box {
@@ -37,14 +50,21 @@ h1{
         font-size: 30px;
         margin-bottom: 20px;
         color:#202a44;
+        font-family:sans-serif;
+        font-weight:350;
+        font-style:initial;
 }
     
  .text-box h3{
         color: #202a44;
+        font-family:sans-serif;
+        font-weight:350;
+        font-style:initial;
+        width: 150px;;
+        border-style:dotted;
+        border-width: 2px;
+        border-color:#202a44;
 }
-
-
-
 
 
 
@@ -52,21 +72,40 @@ h1{
 nav{
     width: 100%;
     display:flex;
-    align-items: center;
+    align-items:center;
     justify-content: space-between;
     padding: 30px 0;
 }
 
 nav ul li{
-    display: inline-block;
-    list-style: none;
+    display:inline-block;
+    list-style:none;
     margin: 10px 30px;
 }
-
-nav ul li a{
+a{
     text-decoration:none;
-    color:white ;
 }
+
+
+
+h2{
+    color: snow;
+    font-family: sans-serif;
+    font-weight: 350;
+}
+
+
+
+
+form div{
+height: 20px;
+color:#202a44;
+font-family: sans-serif;
+font-weight: 300;
+}
+
+
+
 
 
 

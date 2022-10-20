@@ -16,9 +16,9 @@
             <img src="lofo2.png">
             <h1>FellesSkapet</h1>
             <ul>
-                <li><a href="main.html">Home</a></li>
-                <li><a href="survey.html">Survey</a></li>
-                <li><a href="result.html">Result</a></li>
+                <li><a href="main.html"><h5>Home</h5></a></li>
+                <li><a href="survey.html"><h5>Survey</h5></a></li>
+                <li><a href="result.html"><h5 style="color: #202a44;">Result</h5></a></li>
             </ul>
         </nav>
         <hr size="5" width="100%" color="#202a44">
@@ -29,8 +29,20 @@
             <h2>Takk for svar!</h2>
             <h3>GruppeResultat:</h3>
         </div>
-
     </div>
+
+    <div id="results"></div>
+    <script>
+        const resultList = document.getElementById('results')
+        new URLSearchParams(window.location.search).forEach((value, 
+        name) => {
+            resultList.append(`${name}:${value}`)
+            resultList.append(document.createElement('br'))
+        })
+    </script>
+
+
+
 
 </body>
 </html>
