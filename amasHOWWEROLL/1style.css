@@ -46,7 +46,8 @@ nav ul li a{
 
 .text-box {
     margin-top: 60px;
-max-width: 600px;    
+max-width: 600px;  
+margin:auto;  
 }
 
 .text-box h2{
@@ -54,3 +55,9 @@ max-width: 600px;
     margin-bottom: 20px;
     color:#202a44;
 }
+
+.text-box h3 h4 {
+    color: #202a44;
+}
+
+
