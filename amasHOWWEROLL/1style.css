@@ -94,46 +94,6 @@ h2{
     font-weight: 350;
 }
 
-
-
-
-form div{
-height: 20px;
-color:#202a44;
-font-family: sans-serif;
-font-weight: 300;
-}
-
-
-
-
-
-
-
-.slider{
-    width: 400px;
-    font-family: sans-serif;
-    
-}
-.slidercontainer {
+label {
     color: #202a44;
-    display: grid;
-    grid-template-columns: 25% 40% 25%;
-    grid-gap: 20px;
-}
-
-
-h3{
-    color:snow;
-    font-family:sans-serif;
-
-}
-
-td {
-    color: #202a44;
-    text-align: left;
-}
-
-.yt {
-text-align: right;
 }
