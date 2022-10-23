@@ -141,5 +141,19 @@ text-align: right;
     margin: left;
     width: 40%;
 height: 50vh;
-padding: 0 10%;
+padding: 0 10%;}
 
+button {
+    color:snow;
+    background-color: skyblue;
+    border-color: #202a44;
+    border-radius: 10px;
+    border-width: 3px;
+    width: 100px;
+    height: 30px;
+    margin-top:-300px;
+    font-size: 20px;
+    font-family: sans-serif;
+    font-weight: 350;
+
+}
