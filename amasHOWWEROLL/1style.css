@@ -80,6 +80,7 @@ nav{
     display:flex;
     justify-content:space-evenly;
     justify-items:center;
+    padding: 30px 0;
 }
 
 
