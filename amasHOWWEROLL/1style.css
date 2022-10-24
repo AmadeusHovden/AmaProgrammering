@@ -168,9 +168,10 @@ button {
     margin-top: 10%;
     background-color: transparent;
     width: 300px;
-    height: 500px;
+    height: 400px;
     perspective: 1000px;
     overflow: hidden;
+    border-radius: 10px;
   }
   
   .flip-card-inner {
@@ -197,12 +198,12 @@ button {
   }
   
   .flip-card-front {
-    background-color: white;
-    color: black;
+    background-color:#202a44;
+    color:snow;
   }
   
   .flip-card-back {
-    background-color: #1abc9c;
-    color: white;
+    background-color: snow;
+    color: #202a44;
     transform: rotateY(180deg);
   }
