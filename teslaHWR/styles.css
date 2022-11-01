@@ -11,6 +11,7 @@ body {
     font-style: initial;
 }
 
+
 .desktop{
     display:none;
 }
@@ -43,6 +44,7 @@ header a{
 header nav a {
     text-decoration: none;
     padding:5px 20px;
+    opacity: none;
 }
 
 header nav.navn{
