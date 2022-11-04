@@ -33,7 +33,7 @@
 
 
 
-    <form>
+    <form class="form">
         <nav>
     
              <div>
@@ -105,7 +105,7 @@
                         <td class="yt">Natteravn</td>
                     </tr>
                     <tr>
-                        <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
+                        <td colspan="3"><input type="range" name="jobbtid" id="jobbtid" min="0" max="100" class="slider"></td>
                     </tr>
                 </table> 
                 
@@ -113,76 +113,18 @@
     
                 <table class="slidercontainer">
                     <tr>
-                        <td>Morgenfugl</td>
-                        <td class="yt">Natteravn</td>
+                        <td>Snakke</td>
+                        <td class="yt">Skrive</td>
                     </tr>
                     <tr>
-                        <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
+                        <td colspan="3"><input type="range" name="arbeid" id="arbeid" min="0" max="100" class="slider"></td>
                     </tr>
                 </table> 
                 
                 <br>
-
-                <table class="slidercontainer">
-                    <tr>
-                        <td>Morgenfugl</td>
-                        <td class="yt">Natteravn</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
-                    </tr>
-                </table> 
-                
-                <br>
-
-                <table class="slidercontainer">
-                    <tr>
-                        <td>Morgenfugl</td>
-                        <td class="yt">Natteravn</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
-                    </tr>
-                </table> 
-                
-                <br>
-                <table class="slidercontainer">
-                    <tr>
-                        <td>Morgenfugl</td>
-                        <td class="yt">Natteravn</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
-                    </tr>
-                </table> 
-                
-                <br>
-
-                <table class="slidercontainer">
-                    <tr>
-                        <td>Morgenfugl</td>
-                        <td class="yt">Natteravn</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
-                    </tr>
-                </table> 
-                
-                <br>
-
-                <table class="slidercontainer">
-                    <tr>
-                        <td>Morgenfugl</td>
-                        <td class="yt">Natteravn</td>
-                    </tr>
-                    <tr>
-                        <td colspan="3"><input type="range" name="hours" id="hours" min="0" max="100" value="50" class="slider"></td>
-                    </tr>
-                </table> 
-                
-        
             </div>
         </nav>
+
 
             <button type="submit" href="result.html">
                 Send 
@@ -194,8 +136,34 @@
             <br>
 
     </form>
+    <h3>Her kommer resultat</h3>
 <br>
     <hr size="5" width="100%" color="#202a44">
     <p style="color:skyblue">blbla</p>
+
+
+    <script>
+        const formE1 = document.querySelector('.form');
+
+        formE1.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const formData = new FormData(formE1);
+            const data = Object.fromEntries(formData);
+
+            fetch('https://bacit.info', {
+               method: 'POST',
+               headers: {
+                'Content-Type': 'application/json'
+               },
+               body: JSON.stringify(data)
+            }).then(res => res.json())
+              .then(data => console.log(data))
+              .catch(error => console.log(error));
+
+        });
+
+    </script>
+       
 </body>
 </html>
