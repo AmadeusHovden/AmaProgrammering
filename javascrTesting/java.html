@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<!-- viser hva java kan gjøre med knapper (getElementByID) -->
+<p id="ama">Amadeus</p>
+<button type="knapp" 
+onclick='document.getElementById("ama").innerHTML = "Hovden"'>Prøv ut</button>
+</button>
+<br>
+
+
+<button
+onclick="document.getElementById('bilder').src ='DSC_0036-kopi 2.JPG'">
+bytte bilde</button>
+
+<img id="bilder" src="DSC_0011-kopi 2.JPG" style="width:400px";>
+<br>
+
+
+<p id="deus">STOR</p>
+<button type="knapp"
+onclick="document.getElementById('deus').style.fontSize='50px'">MAX</button>
+<br>
+
+
+<p id="hov">Gjem</p>
+<button type="knapp"
+onclick="document.getElementById('hov').style.display='none'">Hade</button>
+<br>
+
+
+<p id="hei" style="display:none">Hei verden</p>
+<button onclick="document.getElementById('hei').style.display='block'">hei</button>
+<br>
+
+
+
+
+
+
+    
+</body>
+</html>
