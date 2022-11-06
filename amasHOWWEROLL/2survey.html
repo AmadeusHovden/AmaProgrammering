@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HowWeRoll</title>
+
+     <link rel="stylesheet" href="survey.css">
+
+</head>
+
+<body>
+    <div class="meny">
+        <nav class="kjøh">
+            <img class="logo" src="lofo2.png">
+            <h1>FellesSkapet</h1>
+            <ul>
+                <li><a href="main.html"><h5>Home</h5></a></li>
+                <li><a href="survey.html"><h5 style="color:#202a44">Survey</h5></a></li>
+                <li><a href="result.html"><h5>Result</h5></a></li>
+            </ul>
+        </nav>
+    </div>
+        <hr size="5" width="100%" color="#202a44">
+        <br>
+
+    
+    <section class="liverpool">
+        <h1>Vil du Bidra i Prosjektet?</h1>
+        <h2>Fyll ut cven og vi tar kontakt</h2>
+
+        <form class="input">
+            <div class="input">
+                <label class="navn" for="name">Fullt Navn</label>
+                <input id="name" name="name" type="text"/>
+            </div>
+
+            <div class="input">
+                <label class="navn" for="email">Email</label>
+                <input id="email" name="email" type="email"/>
+            </div>
+
+            <div class="input">
+                <label class="navn" for="bdate">Fødselsdato</label>
+                <input id="bdate" name="bdate" type="date">
+            </div>
+
+            <br>
+            <h3>ArbeidsPreferanser</h3>
+
+            <div class="input">
+                <input id="arbeid" name="arbeid" type="radio" value="Alene Arbeid"/>
+                <label class="inline1" for="arbeid">Alene Arbeid</label>
+
+                <input id="arbeid" name="arbeid" type="radio" value="Gruppe Arbeid"/>
+                <label class="inline1" for="arbeid">Gruppearbeid</label>
+            </div>
+<br>
+            <div class="input">
+                <input id="jobbtype" name="jobbtype" type="radio" value="Skrive"/>
+                <label class="inline2" for="jobbtype">Skrive</label>
+
+                <input id="jobbtype" name="jobbtype" type="radio" value="Snakke"/>
+                <label class="inline2" for="jobbtype">Snakke</label>
+            </div>
+<br>
+            <div class="input">
+                <input id="jobbtid" name="jobbtid" type="radio" value="Natteravn"/>
+                <label class="inline3" for="jobbtid">Natteravn</label>
+
+                <input id="jobbtid" name="jobbtid" type="radio" value="Morgenfugl"/>
+                <label class="inline3" for="jobbtid">Morgenfugl</label>
+            </div>
+        
+            <br>
+            <h3>Velg ut tre personlighetstrekk</h3>
+
+            <div class="input">
+                <input class="ferdighet--checkbox" id="trekk.tålmodig" name="trekk" type="checkbox" value="tålmodig"/>
+                <label class="ferdighet--checkbox" for="trekk.tålmodig">Tålmodig</label>
+
+                <input class="ferdighet--checkbox" id="trekk.sosial" name="trekk" type="checkbox" value="sosial"/>
+                <label class="ferdighet--checkbox" for="trekk.sosial">Sosial</label>
+
+                <input class="ferdighet--checkbox" id="trekk.strukturert" name="trekk" type="checkbox" value="strukturert"/>
+                <label class="ferdighet--checkbox" for="trekk.strukturert">Strukturert</label>
+            </div>
+
+            <div class="input">
+                <input class="ferdighet--checkbox" id="trekk.demokratisk" name="trekk" type="checkbox" value="demokratisk"/>
+                <label class="ferdighet--checkbox" for="trekk.demokratisk">Demokratisk</label>
+
+                <input class="ferdighet--checkbox" id="trekk.omtenksom" name="trekk" type="checkbox" value="omtenksom"/>
+                <label class="ferdighet--checkbox" for="trekk.omtenksom">Omtenksom</label>
+
+                <input class="ferdighet--checkbox" id="trekk.utadvendt" name="trekk" type="checkbox" value="utadvendt"/>
+                <label class="ferdighet--checkbox" for="trekk.utadvendt">Utadvendt</label>
+            </div>
+
+            <br>
+            <h3>Bidrag</h3>
+            <div class="input">
+                <label class="navn" for="bidrag">Hva kan du bidra med i How We Roll?</label>
+                <textarea id="bidrag" name="bidrag" rows="6" cols="65"></textarea>
+            </div>
+
+
+            <button class="button" type="reset">Reset</button>
+            <button class="button" type="submit">Send Inn!</button>
+
+        </form>
+    </section>
+
+
+    <div class="resultat">
+        <h2>Form Data</h2>
+        <pre class="resultat-wrapper"><code class="jada"></code>
+        </pre>
+    </div>
+
+
+
+<script src="survey.js">
+</script>
+
+</body>
+</html>
+
+    

@@ -1,0 +1,135 @@
+/* https://www.learnwithjason.dev/blog/get-form-values-as-json 
+
+kilden til alt som er brukt, mer styles der*/
+
+
+* {
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+body {
+    background-color:pink;
+    color: #202a44;
+}
+
+
+.meny {
+width:100%;
+height: 50vh;
+padding: 0 10%;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-style: outset;
+    border-width: 5px;
+    border-color:silver;
+}
+
+h1{
+    font-size: 60px;
+    font-family:sans-serif;
+    font-weight:350;
+    font-style:initial;
+    color: #202a44;
+    
+}
+h5{
+    color:snow;
+    font-size: 15px;
+    font-family: sans-serif;
+    font-style: initial;
+    font-weight: 200;
+}
+
+
+.kjøh{
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+
+nav{
+    display:flex;
+    justify-content:space-evenly;
+    justify-items:center;
+    padding: 30px 0;
+}
+
+
+nav ul li{
+    display:inline-block;
+    list-style:none;
+    margin: 10px 30px;
+}
+a{
+    text-decoration:none;
+}
+
+
+/* form css under her */
+
+h3 {
+    line-height:2.125;
+}
+
+.liverpool,.resultat {
+width:90vw;
+max-width: 650px;
+margin:8vh auto;
+}
+
+.resultat{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background: pink;
+    border:1px solid grey;
+    overflow-x:scroll;
+}
+
+.content {
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 1rem 0 2rem;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    overflow: hidden;
+}
+
+.inline {
+    margin-top: 0.25rem;
+    padding:2rem
+}
+
+.navn {
+    display: block;
+    line-height:  1.125em;;
+
+}
+.button
+{
+    display: block;
+    margin: 0.5rem 1rem 0;
+    padding: 0 1rem 0.125rem;
+    background-color: #686a69;
+    border: 0;
+    color: #f9fdfe;
+    font-family: lato, sans-serif;
+    font-size: 100%;
+    letter-spacing: 0.05em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    transition: 150ms all linear;  
+}
+
+button:hover{
+    background: #2a2f2c;
+      cursor: pointer;
+      outline: 0;
+}

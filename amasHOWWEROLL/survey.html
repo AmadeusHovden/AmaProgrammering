@@ -161,31 +161,7 @@
               .then(data => console.log(data))
               .catch(error => console.log(error));
 
-
-              let output ='<h1>RESULTAT<h1>';
-                data.forEach(function(data){
-                    output += `
-
-                    <p>Mr.: ${data.Mr}</p><br>
-                    <p>Mrs.: ${data.Mrs}</p><br>
-
-                    <p>Navn: ${data.fname}</p><br>
-                    <p>EtterNavn: ${data.lname}</p><br>
-                    <p>mail: ${data.email}</p><br>
-                    <p>bursdag: ${data.bdate}</p><br>
-                    <p>jobbtid: ${data.jobbtid}</p><br>
-                    <p>arbeid: ${data.arbeid}</p><br>
-                    <p>trxid: ${data.trxid}</p><br>
-                    time: ${data.time}<br>
-
-                    `
-
-                });
-                document.getElementById("data").innerHTML = outout;
-
         });
-
-        event.target.reset();
 
     </script>
        

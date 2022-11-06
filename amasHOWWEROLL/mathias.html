@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="no-NB">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Web-Form</title>
+</head>
+<body>
+   <div class="navbar">
+      </div>
+      <div class="banner">
+         <div class="bannerText">
+            <h1>Web-Form</h1>
+            <h5>Fyll inn informasjon om deg selv. Trekk grafen til den siden som du føler passer deg best.<br>Disse spørsmålene er relatert til jobb og arbeid, vennligst besvar så ærlig som mulig.</h5>
+         </div>
+         <div class="webform">
+            <form action="https://bacit.info/" method="post" id="webForm">
+               <label id="navn1" for="navn">Fyll inn ditt navn</label>
+               <input type="text" name="navn" id="navn" placeholder="Fyll inn navn her..">
+               <!--Er brukeren mest effektiv og dagen eller natten-->
+              <label for="DN" class="label1">Dag</label> <input type="range" name="DN" id="DN"><label for="DN" class="label2">Natt</label>
+              <!-- Er brukeren mest effektiv alene eller i team-->
+              <label for="AT" class="label1">Alene</label> <input type="range" name="AT" id="AT"><label for="AT" class="label2">Team</label>
+              <!--Liker brukeren å jobbe strukturert eller ustrukturert?-->
+              <label for="DN" class="label1">Strukturert</label> <input type="range" name="SU" id="DN"><label for="SU" class="label2">Ustrukturert</label>
+              <!--Liker brukeren hjemmekontor eller kontor best -->
+              <label for="HK" class="label1">hjemmekontor</label> <input type="range" name="HK" id="DN"><label for="HK" class="label2">kontor</label>
+              <!--Liker brukeren mest fleksible arbeidsdager eller faste arbeidstimer-->
+              <label for="DN" class="label1">Fleksitid</label> <input type="range" name="DN" id="DN"><label for="DN" class="label2">Fast arbeidstid</label>
+              <!--Liker brukeren å planlegge godt eller hoppe rett i arbeidet uten forberedelser? -->
+              <label for="PS" class="label1">Planlegge</label><input type="range" name="DN" id="PS"><label for="PS" class="label2">Starte rett på saken</label>
+              <button type="submit" id="sumbitbtn">Send inn din informasjon</button>
+            </form>
+               <span id="data"></span>
+         </div>
+
+         <script>
+            let webForm = document.getElementById("webForm"); // lager variabel som brukes i js
+
+            document.getElementById("webForm").addEventListener("submit", getData);
+
+            function getData(){
+               event.preventDefault(); //gjør at du ikke blir rederect til bacit.no som skjemaet sendes til
+
+               fetch("https://bacit.info/")
+               .then((res) => res.json())
+               .then((data) => {
+                  let output = '<h2>Data</h2>';
+                  data.forEach(function(data){
+                     output += `
+                     
+                        <p>Navn: ${data.navn}</p><br>
+                        <p>Dag eller Natt: ${data.DN}</p><br>
+                        <p>Alene eller Team: ${data.AT}</p><br>
+                        <p>Strukturert eller u strukturert: ${data.SU}</p><br>
+                        <p>Kontor eller hjemmekontor: ${data.HK}</p><br>
+                        <p>Alene eller Team: ${data.PS}</p><br>
+                        <p>trxid: ${data.trxid}</p><br>
+                        time: ${data.time}<br>
+                        
+                     `
+                     // lager html elementene i javascript.
+                  });
+                  document.getElementById("data").innerHTML = output; //henter elemented fra ID og printer ut ved bruk av innerHTML
+               });
+
+               event.target.reset(); //Resetter skjema
+            };
+         </script>
+</body>
+</html>
