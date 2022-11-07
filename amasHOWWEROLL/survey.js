@@ -128,3 +128,25 @@ const isValidElement = element => {
    */
   const form = document.getElementsByClassName('input')[0];
   form.addEventListener('submit', handleFormSubmit);
+
+
+  const formE1 = document.querySelector('.input');
+
+        formE1.addEventListener('submit', event => {
+            event.preventDefault();
+
+            const formData = new FormData(formE1);
+            const data = Object.fromEntries(formData);
+            
+
+            fetch('https://bacit.info', {
+               method: 'POST',
+               headers: {
+                'Content-Type': 'application/json'
+               },
+               body: JSON.stringify(data)
+            }).then(res => res.json())
+              .then(data => console.log(data))
+              .catch(error => console.log(error));
+
+        });
