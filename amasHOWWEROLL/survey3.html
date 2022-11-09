@@ -6,21 +6,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form</title>
   <link rel="stylesheet" href="survey3.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap"rel="stylesheet"/>
+
 </head>
 <body>
 
   <div class="body">
 
 
-<form  class="form" />
-    <header>Student Survey Form</header>
+<form  class="form">
+    <header>Vil du bidra i Prosjektet?</header>
+    <p style="text-align:center">Fyll ut cven og vi tar kontakt</p>
 				
     <fieldset>
       <section>
         
         <label class="input">
-                        <label  for="name" id="name-label" >Name: </label>
+                        <label  for="name" id="name-label" >FullName: </label>
                         <input id="name" type="text" name="name"  placeholder="Enter your name" required> </input>
                         <label for="email" id="email-label" class="input">Email: </label>
       <input id="email" type="email" name="email"  placeholder=" Enter your Email" required> </input>
@@ -30,48 +35,76 @@
       
              
       </section>
-                <section>
-                       </section>
-                      </fieldset>
-
-    <fieldset></fieldset>
-
-
-    <fieldset>
+               <br>
+                
       <section>
-          <label class="label">Choose some!</label>
+          <label class="label">Velg hvordan du liker å jobbe</label>
           <div class="row">
               <span>
               <div class="col col-4">
-                  <label class="radio">
-                      <input type="radio" name="radio"  /><i></i>Click me</label>
-                  </span> <span>
-                  <label class="radio">
-                      <input type="radio" name="radio" /><i></i>Wooow</label>
-                  </span>
-                  <label class="radio">
-                      <input type="radio" name="radio" /><i></i>Ahaaaa</label>
-                      <label class="radio">
-                          <input type="radio" name="radio" /><i></i>Yehuu</label>
-                          <label class="radio">
-                              <input type="radio" name="radio" /><i></i>Batman</label>
+                <table class="slidercontainer">
+                    <tr>
+                        <td>Natteravn</td>
+                        <td class="yt">Morgenfugl</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="range" name="arbeid" id="arbeid" min="0" max="100" class="slider"></td>
+                    </tr>
+                </table> 
+             </span> 
+             <span>
 
-              </div>
-              <div class="col col-4">
-                  
-              </div>
-              <div class="col col-4">
-                  <label class="radio">
-                      <input type="radio" name="radio" /><i></i>Working</label>
-                  <label class="radio">
-                      <input type="radio" name="radio" /><i></i>Hohooh</label>
-                  <label class="radio">
-                      <input type="radio" name="radio" /><i></i>Ronaldo</label>
-                      <label class="radio">
-                          <input type="radio" name="radio" /><i></i>Christian Bale</label>
-                          <label class="radio">
-                              <input type="radio" name="radio" /><i></i>Ahao</label>
-              </div>
+                <table class="slidercontainer">
+                    <tr>
+                        <td>Planlagte timer</td>
+                        <td class="yt">Når det passer</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="range" name="arbeid" id="arbeid" min="0" max="100" class="slider"></td>
+                    </tr>
+                </table> 
+            </span>
+
+            <span>
+
+                <table class="slidercontainer">
+                    <tr>
+                        <td>Detaljert</td>
+                        <td class="yt">Effektivt</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="range" name="arbeid" id="arbeid" min="0" max="100" class="slider"></td>
+                    </tr>
+                </table> 
+            </span>
+
+            <span>
+
+                <table class="slidercontainer">
+                    <tr>
+                        <td>Alene arbeid</td>
+                        <td class="yt">Gruppearbeid</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="range" name="arbeid" id="arbeid" min="0" max="100" class="slider"></td>
+                    </tr>
+                </table> 
+            </span>
+
+            <span>
+
+                <table class="slidercontainer">
+                    <tr>
+                        <td>Snakke</td>
+                        <td class="yt">Skrive</td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"><input type="range" name="arbeid" id="arbeid" min="0" max="100" class="slider"></td>
+                    </tr>
+                </table> 
+            </span>
+        
+              
           </div>
       </section>
       
@@ -79,18 +112,18 @@
 
   <fieldset>
     <section>
-        <label class="label">Check some boxes!</label>
+        <label class="label">Personlighetstrekk</label>
         <div class="row">
             <div class="col col-4">
                 <label class="checkbox">
-                    <input type="checkbox" name="checkbox"  /><i></i>hoho</label>
+                    <input type="checkbox" name="checkbox"  /><i></i>Tålmodig</label>
                 <label class="checkbox">
-                    <input type="checkbox" name="checkbox" /><i></i>Yehuu</label>
+                    <input type="checkbox" name="checkbox" /><i></i>Sosial</label>
                 <label class="checkbox">
-                    <input type="checkbox" name="checkbox" /><i></i>Undeaaad</label>
+                    <input type="checkbox" name="checkbox" /><i></i>Utadvendt</label>
 
                     <label class="checkbox">
-                        <input type="checkbox" name="checkbox" /><i></i>Texas</label>
+                        <input type="checkbox" name="checkbox" /><i></i>Innadvendt</label>
                     
             </div>
             <div class="col col-4">
@@ -99,13 +132,13 @@
             </div>
             <div class="col col-4">
                 <label class="checkbox">
-                    <input type="checkbox" name="checkbox" /><i></i>Social</label>
+                    <input type="checkbox" name="checkbox" /><i></i>Strukturert</label>
                 <label class="checkbox">
-                    <input type="checkbox" name="checkbox" /><i></i>Outgoing</label>
+                    <input type="checkbox" name="checkbox" /><i></i>Demokratisk</label>
                 <label class="checkbox">
-                    <input type="checkbox" name="checkbox" /><i></i>Perfect</label>
+                    <input type="checkbox" name="checkbox" /><i></i>Omtenksom</label>
                     <label class="checkbox">
-                        <input type="checkbox" name="checkbox" /><i></i>Wow</label>
+                        <input type="checkbox" name="checkbox" /><i></i>Motivert</label>
             </div>
         </div>
     </section>
@@ -114,7 +147,7 @@
 
 <fieldset>					
   <section>
-      <label class="label">You can type your thoughts: </label>
+      <label class="label">Hva kan du bidra med i prosjektet?: </label>
       <label class="textarea">
           <textarea rows="3"></textarea>
       </label>
@@ -128,7 +161,7 @@
 
 <fieldset>
   <section>
-      <label class="label">Give some stars</label>
+      <label class="label">Selvevaluering</label>
       <div class="rating">
           <input type="radio" name="stars-rating" id="stars-rating-5" />
           <label for="stars-rating-5"><i class="fa fa-star"></i></label>
@@ -140,7 +173,7 @@
           <label for="stars-rating-2"><i class="fa fa-star"></i></label>
           <input type="radio" name="stars-rating" id="stars-rating-1" />
           <label for="stars-rating-1"><i class="fa fa-star"></i></label>
-          Give Stars
+          Oppmøte
       </div>
 
       <div class="rating">
@@ -154,7 +187,7 @@
           <label for="stars-rating-2"><i class="fa fa-star"></i></label>
           <input type="radio" name="stars-rating" id="stars-rating-1" />
           <label for="stars-rating-1"><i class="fa fa-star"></i></label>
-          Give Stars
+          Arbeidsmoral
           
       </div>
       <div class="rating">
@@ -168,7 +201,7 @@
           <label for="stars-rating-2"><i class="fa fa-star"></i></label>
           <input type="radio" name="stars-rating" id="stars-rating-1" />
           <label for="stars-rating-1"><i class="fa fa-star"></i></label>
-          Give Stars
+          HowWeRoll Arbeid
       </div>
       <div class="rating">
           <input type="radio" name="stars-rating" id="stars-rating-5" />
@@ -181,7 +214,7 @@
           <label for="stars-rating-2"><i class="fa fa-star"></i></label>
           <input type="radio" name="stars-rating" id="stars-rating-1" />
           <label for="stars-rating-1"><i class="fa fa-star"></i></label>
-          Give Stars
+          Flaggoppgave Arbeid
       </div>
       <div class="rating">
           <input type="radio" name="stars-rating" id="stars-rating-5" />
@@ -194,7 +227,7 @@
           <label for="stars-rating-2"><i class="fa fa-star"></i></label>
           <input type="radio" name="stars-rating" id="stars-rating-1" />
           <label for="stars-rating-1"><i class="fa fa-star"></i></label>
-          Give Stars
+          Programmeringsforståelse
       </div>
       
      

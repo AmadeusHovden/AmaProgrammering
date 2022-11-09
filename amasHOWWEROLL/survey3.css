@@ -1,4 +1,4 @@
-
+.body
 .form .message {
 	display: none;
 	color: #6fb679;
@@ -13,43 +13,18 @@
 	font-size: 30px;
 	line-height: 81px;
 }
-.form.submited fieldset,
-.form.submited footer {
-	display: none;
-}
-.form.submited .message {
-	display: block;
-	padding: 25px 30px;
-	background: rgba(255,255,255,.9);
-	font: 300 18px/27px 'Open Sans', Helvetica, Arial, sans-serif;
-	text-align: center;
-}
 
 
 
-.form .radio input + i:after {
-	background-color: #6dc5dd;	
-}
-.form .checkbox input + i:after {
-	color: #6dc5dd;
-}
-.form .radio input:checked + i,
-.form .checkbox input:checked + i,
-.form .toggle input:checked + i {
-	border-color: #6dc5dd;	
-}
-.form .rating input:checked ~ label {
-	color: #6dc5dd;	
-}
 
-
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
 
 .form {
 	margin: 0;
 	outline: none;
 	box-shadow: 0 0 10px rgba(0,0,0,.3);
-	font: 13px/1.55 'Open Sans', Helvetica, Arial, sans-serif;
+	font: 13px;
+	font-family: 'Nunito';
+	font-weight: 300;
 	color: #666;
 }
 .form * {
@@ -444,14 +419,7 @@
 	padding-left: 46px;
 }
 
-.form .row {
-	margin: 0 -15px;
-}
-.form .row:after {
-	content: '';
-	display: table;
-	clear: both;
-}
+
 .form .col {
 	float: left;
 	min-height: 1px;
